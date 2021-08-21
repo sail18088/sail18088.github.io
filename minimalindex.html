@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="animated-text">
+      <div class="line">bluebantha</div>
+      <div class="line">photography</div>
+      <div class="line">capture the moment</div>
+      <div class="line">capture the world</div>
+    </div>
+  </body>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: montserrat,sans-serif;
+      background: black;
+    }
+    .animated-text{
+      color: #00a86b;
+      postition: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: #fff;
+      padding: 0 40px;
+      height: 60px;
+      overflow: hidden;
+    }
+    .line{
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 40px;
+      line-height: 60px;
+    }
+    .line:first-child{
+      animation: anim 12s infintie;
+    }
+    
+    @keyframes anim {
+      0%{
+        margin-top: 0;
+      }
+      16%{
+        margin-top: -60;
+      }
+      33%{
+        margin-top: -120;
+      }
+      50%{
+        margin-top: -180;
+      }
+      66%{
+        margin-top: -120;
+      }
+      82%{
+        margin-top: -60;
+      }
+      100%{
+        margin-top: 0;
+      }
+</html>
