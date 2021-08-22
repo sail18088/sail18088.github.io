@@ -1,27 +1,41 @@
 <html>
   <head>
-  <h1></h1>
-    <img src="line.png">
   </head>
-
-
-<style>
-  head {
-    background-color: black;
-  }
-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1000;
-    height: 120px;
-    margin:-60px 0 0 -60px;
-    -webkit-animation:spin 2s linear infinite;
-    -moz-animation:spin 2s linear infinite;
-    animation:spin 2s linear infinite;
-}
-</style>
-@-moz-keyframes spin { 100% { -moz-transform: rotate(30deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(30deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(30deg); transform:rotate(360deg); } }
-</html>
+  <body>
+    <div class="card">
+      <div class="card-content">
+      <h2 class="card-title">911 GT3</h2>
+      <p class="card-body"> German track car</p>
+    </div>
+  </body>
+   
+  <style>
+    .card{
+      background-image:"porsche gt3 1.jpg";
+      background-size:cover;
+      padding: 10rem 0 0;
+    }
+    .card-content{
+      padding: 1.5em;
+      background: black;
+    }
+    .card-title{
+      position: relative;
+    }
+    .card-title::after{
+      content: "";
+      position: absolute;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 500ms ease;
+      width" 100%;
+    }
+    .card:hover .card-title::after{
+      transform: scaleX(1);
+      
+    
+      
+    
